@@ -1,16 +1,34 @@
-# 🧠 Custom Quiz Generator
+# Custom Quiz Generator
 
 > **A modern, interactive quiz generator that allows users to create, share, and play personalized quizzes with real-time scoring, timer functionality, and shareable results.**
 
 
-![Screenshot from 2025-05-26 12-44-49](https://github.com/user-attachments/assets/f867cd2f-2f6c-46d8-9e95-14b9e9eee247)
-![Screenshot from 2025-05-26 12-44-00](https://github.com/user-att![Screenshot from 2025-05-26 12-45-24](https://github.com/user-attachments/assets/cb38728b-a2a7-47d0-beaf-bdb4282ed27f)
-![Screenshot from 2025-05-26 12-45-09](https://github.com/user-attachments/assets/110d0df2-ded1-48c7-acfb-4611d286fd9f)
-achments/assets/d668c745-847d-43f1-b669-64da5842c47d)
-![Screenshot from 2025-05-26 12-45-34](https://github.com/user-attachments/assets/53d9aff0-ad97-409b-8cbb-ba5d7f0f5b4c)
-![Screenshot from 2025-05-26 12-46-04](https://github.com/user-attachments/assets/215fefff-d2d2-428a-9049-3fc26ea3187a)
-![Screenshot from 2025-05-26 12-45-54](https://github.com/user-attachments/assets/ca7d3629-5f88-4219-b38e-57e72f9c1263)
-![Screenshot from 2025-05-26 12-45-43](https://github.com/user-attachments/assets/d7a480b3-2a8d-4517-9206-0c814006c6a8)
+![Screenshot from 2025-05-26 12-44-00](https://github.com/user-attachments/assets/0a323b50-dda5-4b0c-86e4-676b429279dc)
+
+
+![Screenshot from 2025-05-26 12-44-49](https://github.com/user-attachments/assets/2546bf9d-3efe-4b84-ad43-9f1766077939)
+
+
+![Screenshot from 2025-05-26 12-45-09](https://github.com/user-attachments/assets/55a71e1c-4a85-4fd6-847e-9f46e59abe1c)
+
+
+![Screenshot from 2025-05-26 12-45-24](https://github.com/user-attachments/assets/c2c6ba2f-d364-47b5-8b00-a4729d635363)
+
+
+![Screenshot from 2025-05-26 12-45-34](https://github.com/user-attachments/assets/09bb4ba0-78fb-4edf-b8d4-56ea3cbd81a7)
+
+
+![Screenshot from 2025-05-26 12-45-43](https://github.com/user-attachments/assets/d5c261c7-fa13-414d-b119-a85c4a88247f)
+
+
+![Screenshot from 2025-05-26 12-45-54](https://github.com/user-attachments/assets/ff646d90-5e1b-4777-aa47-6bbff4fadcdc)
+
+
+![Screenshot from 2025-05-26 12-46-04](https://github.com/user-attachments/assets/8a3dbc9d-d56d-4a5f-8de6-efba20b7aefb)
+
+
+
+
 
 
 ## **Features**
