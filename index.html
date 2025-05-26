@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Quiz Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Custom Quiz Generator</h1>
+            <p>Create, share, and play personalized quizzes with timer and score tracking</p>
+        </header>
+        
+        <div class="tab-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="create">Create Quiz</button>
+                <button class="tab-btn" data-tab="play">Play Quiz</button>
+                <button class="tab-btn" data-tab="my-quizzes">My Quizzes</button>
+            </div>
+            
+            <div id="create-tab" class="tab-content active">
+                <div class="form-group">
+                    <label for="quiz-title">Quiz Title</label>
+                    <input type="text" id="quiz-title" placeholder="Enter a title for your quiz">
+                </div>
+                
+                <div class="form-group">
+                    <label for="quiz-description">Description (Optional)</label>
+                    <textarea id="quiz-description" rows="3" placeholder="Enter a brief description of your quiz"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="time-limit">Time Limit (seconds per question)</label>
+                    <input type="number" id="time-limit" min="10" value="30">
+                </div>
+                
+                <div class="questions-container">
+                    <h3>Questions</h3>
+                    <div id="questions-list">
+                        <!-- Questions will be added here dynamically -->
+                    </div>
+                    
+                    <button id="add-question-btn" class="btn">Add Question</button>
+                </div>
+                
+                <div style="margin-top: 30px; text-align: center;">
+                    <button id="save-quiz-btn" class="btn secondary">Save Quiz</button>
+                </div>
+            </div>
+            
+            <div id="play-tab" class="tab-content">
+                <div class="form-group">
+                    <label for="quiz-select">Select a Quiz</label>
+                    <select id="quiz-select">
+                        <option value="">-- Select a quiz --</option>
+                    </select>
+                </div>
+                
+                <div id="quiz-container" style="display: none;">
+                    <div class="quiz-header">
+                        <h2 id="quiz-title-display"></h2>
+                        <div class="timer" id="timer-display">00:30</div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    
+                    <div id="question-display" class="question"></div>
+                    
+                    <div id="options-display" class="options">
+                        <!-- Options will be added here dynamically -->
+                    </div>
+                    
+                    <div class="quiz-footer">
+                        <button id="prev-btn" class="btn" disabled>Previous</button>
+                        <button id="next-btn" class="btn">Next</button>
+                    </div>
+                </div>
+                
+                <div id="results-container" class="results-container" style="display: none;">
+                    <h2>Quiz Results</h2>
+                    <div class="score-display">
+                        <span id="score">0</span>/<span id="total-questions">0</span>
+                    </div>
+                    <div class="results-details">
+                        <p>You completed the quiz in <span id="time-taken">0</span> seconds.</p>
+                        <p id="performance-message"></p>
+                    </div>
+                    <div class="share-container">
+                        <h3>Share Your Results</h3>
+                        <input type="text" id="share-link" class="share-link" readonly>
+                        <div class="share-buttons">
+                            <button id="copy-link-btn" class="btn">Copy Link</button>
+                            <button id="play-again-btn" class="btn secondary">Play Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="my-quizzes-tab" class="tab-content">
+                <h2>My Saved Quizzes</h2>
+                <div id="saved-quizzes-list">
+                    <!-- Saved quizzes will be displayed here -->
+                    <p id="no-quizzes-message">No quizzes created yet. Go to the Create Quiz tab to make one!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Question Template Modal -->
+    <div class="modal-backdrop" id="question-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Add Question</h3>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="question-text">Question</label>
+                    <input type="text" id="question-text" placeholder="Enter your question">
+                </div>
+                
+                <div class="options-container" id="options-container">
+                    <div class="option-group">
+                        <div class="option-input">
+                            <input type="text" placeholder="Option 1" class="option-text">
+                        </div>
+                        <input type="radio" name="correct-option" class="correct-checkbox" checked>
+                        <div class="option-actions">
+                            <button class="remove-option-btn">Remove</button>
+                        </div>
+                    </div>
+                    <div class="option-group">
+                        <div class="option-input">
+                            <input type="text" placeholder="Option 2" class="option-text">
+                        </div>
+                        <input type="radio" name="correct-option" class="correct-checkbox">
+                        <div class="option-actions">
+                            <button class="remove-option-btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="add-option-btn" class="btn" style="margin-top: 15px;">Add Option</button>
+            </div>
+            <div class="modal-footer">
+                <button id="cancel-question-btn" class="btn">Cancel</button>
+                <button id="save-question-btn" class="btn secondary">Save Question</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
